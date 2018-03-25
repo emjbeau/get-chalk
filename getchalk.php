@@ -34,14 +34,12 @@ function wp_chalk_shortcode(){
     //create arrays to hold all conferences and divisions (there will be duplicates)
     $confArrayAll = array();
     $divArrayAll = array();
-    $teamArrayAll = array();
     
     //add conferences and divisions to their respective arrays
     foreach ($teams as $team)
     {
         array_push($confArrayAll, $team['conference']);
         array_push($divArrayAll, $team['division']);
-        array_push($teamArrayAll, $team['name']);
     }
     
     //eliminate duplicate values from arrays and sort
@@ -110,7 +108,7 @@ add_shortcode('getchalk', 'wp_chalk_shortcode');
 ?>
 
 <script>
-    function filterTeamsByDiv() {
+function filterTeamsByDiv() {
     var d = document.getElementById("teamsByDiv");
     var c = document.getElementById("teamsByConf");
     
