@@ -1,0 +1,36 @@
+/* 
+    Created on : 24-Mar-2018, 7:28:28 PM
+    Author     : Emily Beauchamp
+*/
+
+#title {
+    text-align: center;
+}
+
+body {
+    font-family: "Arial";
+}
+
+#buttonGroup {
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    margin: 10px;
+}
+
+.conference {
+    margin-top: 10px;
+}
+
+.division {
+    float: left;
+    width: 25%;
+    margin-bottom: 50px;
+}
+
+#confNoDivs {
+    float: left;
+    width: 50%;
+}
